@@ -9,7 +9,7 @@ body {
 .left-section {
     display: flex;
     align-items: center;
-    background-image: url("plants.jpg");
+    background-image: url("buildings.jpg");
     background-size: cover;
     width: 35%;
     position: absolute;
