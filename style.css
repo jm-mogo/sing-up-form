@@ -1,5 +1,5 @@
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: arial, Helvetica, sans-serif;
 }
 
 .container > div {
@@ -42,8 +42,8 @@ body {
 
 .right-section > p,
 .right-section h2 {
+    font-weight: 600;
     color: #161616;
-    font-weight: bold;
     font-size: 1.2rem;
     margin-left: 3rem;
     margin-right: 8rem;
@@ -59,10 +59,21 @@ body {
 }
 
 .user-data {
+    font-size: .8rem;
     background-color: #f8f3f3;
     padding: 1rem;
     padding-left: 3rem;
     box-shadow: 10px 6px 12px  rgb(207, 207, 207);
+}
+
+.user-data-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-data div {
+    padding-right: 50px;
+    padding-top: 20px;
 }
 
 
@@ -78,3 +89,20 @@ body {
     background-color: #573f3f;
     box-shadow: 1px 1px 6px #1a1919;
 }
+
+input {
+    appearance: none;
+    background-color: #f8f3f3;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    width: 280px;
+    padding: 5px;
+    height: 32px;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #d1cfcf;
+}
+
