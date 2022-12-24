@@ -8,7 +8,10 @@ body {
 
 .left-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    
     background-image: url("buildings.jpg");
     background-size: cover;
     width: 35%;
@@ -25,6 +28,7 @@ body {
 
 .title {
     width: 100%;
+    margin: auto;
 }
 
 
@@ -36,6 +40,13 @@ body {
     background-color: rgba(0, 0, 0, 0.575)
 }
 
+.credits a,
+.credits {
+    color: #f3f3f3;
+    font-size: .8rem;
+    margin-bottom: 12px;
+}
+
 .right-section p {
     margin-top: 8rem;
 }
@@ -44,7 +55,7 @@ body {
 .right-section h2 {
     font-weight: 600;
     color: #161616;
-    font-size: 1.2rem;
+    font-size: bold;
     margin-left: 3rem;
     margin-right: 8rem;
 }
@@ -61,7 +72,7 @@ body {
 .user-data {
     font-size: .8rem;
     background-color: #f8f3f3;
-    padding: 1rem;
+    padding: 2rem;
     padding-left: 3rem;
     box-shadow: 10px 6px 12px  rgb(207, 207, 207);
 }
@@ -71,7 +82,7 @@ body {
     flex-wrap: wrap;
 }
 
-.user-data div {
+.user-data-form div {
     padding-right: 50px;
     padding-top: 20px;
 }
@@ -96,7 +107,6 @@ input {
     display: block;
     font-family: inherit;
     font-size: 1rem;
-    margin: 0;
     box-sizing: border-box;
     width: 280px;
     padding: 5px;
@@ -104,5 +114,6 @@ input {
     border: 1px solid;
     border-radius: 4px;
     border-color: #d1cfcf;
+    margin-top: 4px;
 }
 
