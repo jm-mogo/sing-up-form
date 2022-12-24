@@ -37,7 +37,7 @@ body {
 }
 
 .right-section p {
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 
 .right-section > p,
@@ -62,6 +62,7 @@ body {
     background-color: #f8f3f3;
     padding: 1rem;
     padding-left: 3rem;
+    box-shadow: 10px 6px 12px  rgb(207, 207, 207);
 }
 
 
@@ -74,5 +75,6 @@ body {
     width: 16rem;
     border-radius: 6px;
     color: #f3f3f3;
-    background-color: #596D48;
+    background-color: #573f3f;
+    box-shadow: 1px 1px 6px #1a1919;
 }
