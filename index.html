@@ -12,7 +12,7 @@
     <div class="container">
         <div class="left-section">
             <div class="title">
-                <h2>THE ODIN</h2>
+                <h2>LOLMIKE</h2>
             </div>
             <div class="credits">
                 <p>Photo by <a href="https://www.instagram.com/kamilablanco_sky/" target="_blank" rel="noopener noreferrer">Kamila</a></p>
@@ -21,7 +21,7 @@
         <div class="right-section">
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up now to get started.</p>
             <h2>You know you want to.</h2>
-            <form action="#" method="post">
+            <form >
                 <fieldset class="user-data">
                     <h3>Let's do this!</h3>
                     <div class="user-data-form">
@@ -44,6 +44,7 @@
                         <div>
                             <label for="password">PASSWORD</label>
                             <input type="password" id="password">
+                            <span></span>
                         </div>
                         <div>
                             <label for="c-password">CONFIRM PASSWORD</label>
@@ -52,10 +53,28 @@
                     </div>
                     
                 </fieldset>
+                <button>Create Account</button>
             </form>
-        <button>Create Account</button>
+        
         </div>
     </div>
+    <script>
+        let password = document.getElementById("password")
+        let confirm_password = document.getElementById("c-password");
+
+        function validatePassword(){
+        if(password.value != confirm_password.value) {
+            password.classList.add('invalid-password');
+            confirm_password.classList.add('invalid-password');
+        } else {
+            password.classList.remove('invalid-password');
+            confirm_password.classList.remove('invalid-password');
+        }
+        }
+
+        password.addEventListener("keyup", validatePassword);
+        confirm_password.addEventListener("keyup", validatePassword);
+        </script>
 </body>
 </html>
 
