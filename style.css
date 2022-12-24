@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     font-family: arial, Helvetica, sans-serif;
 }
@@ -37,7 +39,8 @@ body {
     padding: 2rem;
     color: #f3f3f3;
     font-size: 3rem;
-    background-color: rgba(0, 0, 0, 0.575)
+    background-color: rgba(0, 0, 0, 0.575);
+    font-family: 'Press Start 2P';
 }
 
 .credits a,
@@ -119,3 +122,18 @@ input {
     margin-top: 4px;
 }
 
+input:invalid {
+    border-color: #bb1515;
+    box-shadow: 1px 0px 2px rgb(161, 161, 161);
+}
+
+.invalid-password {
+    border-color: #bb1515;
+    box-shadow: 1px 0px 2px rgb(161, 161, 161);
+}
+
+.invalid-password + span::after {
+    content: "*Passwords do not match";
+    color: #bb1515;
+    font-size: .7rem;
+}
