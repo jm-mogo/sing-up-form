@@ -147,6 +147,11 @@ input:invalid,
     width: 100%;
 }
 
+.user-data h3 {
+    margin-left: -3rem;
+}
+
+
 .right-section p {
     margin-top: 3rem;
 }
